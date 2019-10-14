@@ -53,3 +53,32 @@ while(len(f)!=1):
         f.pop(h-1)
 print(f)
 ###
+
+###R.Narayan(https://github.com/R-Narayan)
+-Sqrt using bubble sort
+###
+x=int(input("Enter a Number"))
+
+l=0
+r=x
+while(l<r):
+    m=(l+r)//2
+    if m*m==x:
+        print(m);break
+    if m*m<x:
+        l=m+1
+    if m*m>x:
+        r=m-1
+print(m)
+if m*m!=x:
+    print('kk')
+    k=1
+    for fuck in range(0,20):
+        k=k/10
+        while(m*m<x):
+            m+=k
+        m-=k
+    
+    print (m)
+print(m , "*",m,'=',m*m)
+###
