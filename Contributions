@@ -82,3 +82,22 @@ if m*m!=x:
     print (m)
 print(m , "*",m,'=',m*m)
 ###
+
+###R.Narayan(http://github.com/R-Narayan)
+-String comparison
+###
+s1=input()
+s2=input()
+k=0
+for i in range(len(s2)):
+    j=0
+    while (j<len(s1)):
+        if s2[i]==s1[j]:
+            k+=1
+            s1=s1[j+1::]
+            break
+        j+=1
+if k==len(s2):
+    print("Yes")
+else :print('No')
+###
