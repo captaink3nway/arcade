@@ -18,3 +18,38 @@ def bsort(arr):
       if arr[j]<arr[j+1]:
         arr[j],arr[j+1]=arr[j+1],arr[j]
 ###
+
+###R.Narayan(https://github.com/R-Narayan)
+-F.L.A.M.E.S(Game)
+###
+n1=input("Enter your name ")
+n2=input("Enter secpnd name")
+ga=[]
+for pp in range (0,len(n1)):
+    ga.append(n1[pp])
+for ppp in range (0,len(n2)):
+    ga.append(n2[ppp])
+k=len(ga)  
+for i in range (0,len(n1)):
+    for j in range (0,len(n2)):
+        
+        if n1[i]==n2[j]:
+            nr=n1[i]
+            for hh in range (0,k) :
+            
+                if ga[hh]==nr:
+                    ga[hh]=0
+zz=[]
+for kk in range(0,len(ga)):
+    if ga[kk]!=0:
+        zz.append(ga[kk])
+p=len(zz)
+f=['f','l','a','m','e','s']
+while(len(f)!=1):
+    if p<len(f):
+        f.pop(p-1)
+    else:
+        h=p%len(f)
+        f.pop(h-1)
+print(f)
+###
