@@ -101,3 +101,47 @@ if k==len(s2):
     print("Yes")
 else :print('No')
 ###
+
+###R.Narayan(https://github.com/R-Narayan)
+-Convert roman to int
+###
+
+def val(x):
+    if x=='I':
+        return 1
+    if x=='V':
+        return 5
+    if x=='X':
+        return 10
+    if x=='L':
+        return 50
+    if x=='C':
+        return 100
+    if x=='D':
+        return 500
+    if x=='M':
+        return 1000
+
+s=input()
+f=0
+ss=0
+if type(s)!=str:
+    print('enter a roman number')
+    exit()
+else:
+    print(type(s))
+    for i in range(0,len(s)):
+        print('here')
+        if s[0]==s[-1]:
+            ss=val(s[0])
+            break;
+        else:
+            q1=val(s[i])
+        q2=val(s[i+1])
+        if q1<q2:
+            ss+=q2-q1
+        if q1>q2:
+            ss+=q1
+        
+print(ss)
+###
