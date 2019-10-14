@@ -145,3 +145,21 @@ else:
         
 print(ss)
 ###
+
+###R.Narayan(https://github/R-Narayan)
+- to find all the minor dna from a parent dna 
+###
+from itertools import combinations
+k=input()
+n=int(input())
+c=list(combinations(k,n))
+c.sort
+for i in c:
+  s=''
+  for j in len(i):
+    s+=i[j]
+   print(s)
+###
+   
+
+
