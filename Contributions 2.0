@@ -23,3 +23,24 @@ h
 sdjh
 sjdil
 ###
+
+#### GauthamSree
+- Method overriding in Python
+###
+class Muggle:
+
+    def convince(self, other, thing):
+        print("Please, " + other + ", " + thing)
+
+class Wizard(Muggle):
+
+    def convince(self, other, thing):
+        print("Imperius {" + other + ", " + thing + "}")
+
+
+petunia = Muggle()
+harry = Wizard()
+
+petunia.convince("Harry", "clean up")
+harry.convince("Dudley", "clean up")
+###
